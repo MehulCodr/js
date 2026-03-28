@@ -16,7 +16,7 @@ function login(username) {
 }
 console.log(login("kunal"));
 
-function calculate(...num) {
+function calculate(num1, num2, ...num) {
     return num;
 }
-console.log(calculate(20, 33, 14));
+console.log(calculate(20, 33, 14,18, 25, 30));

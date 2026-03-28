@@ -1,6 +1,6 @@
 // object literals
 const mysym = Symbol("key1");
-const user1 = {
+const user1 = { // object literal
     name: "kunal",
     age: 18,
     [mysym]: "acha",
@@ -22,6 +22,8 @@ user1.greetings = function() {
     console.log("hello i am function");
 }
 user1.greetings()
+console.log(user1.greetings); // [function (anonymous)]
+console.log(user1.greetings());
 user1.greetings2 = function() {
     console.log(`hello thakur saab, ${this.age}`);
 }
