@@ -10,10 +10,19 @@
         <li>Javascript</li>
     </ul>
     <script>
-        const div = document.createElement('div');
-        div.setAttribute("title" , "black");
-        div.innerHTML = "Mehul";
-        document.body.appendChild(div);
+        // const div = document.createElement('div');
+        // div.setAttribute("title" , "black");
+        // div.innerHTML = "Mehul";
+        // document.body.appendChild(div);
+        function addlistElement(element)
+        {
+            const li = document.createElement('li');
+            li.innerHTML = `${element}`;
+            document.querySelector('.parent')
+                .appendChild(li);
+            
+        }
+        addlistElement("python");
     </script>
 </body>
 </html>
